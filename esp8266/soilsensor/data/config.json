@@ -1,0 +1,1 @@
+{"wifi":{"ssid":"xxxx","passphase":"xxxx"},"thingspeak":{"enabled":true,"channel":1234567,"writeKey":"HH9PKVP7ECVEE1GN"},"mcu":{"deepSleepTime":900}}
