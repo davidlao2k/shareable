@@ -36,7 +36,7 @@ float AHTSensor::getHumidity(bool _readSensor)
   if (r == 0)
     return 0;
 
-  return r * 100 / 1048576;
+  return r * 100 / 1048576.0;
 }
 
 float AHTSensor::getTemperature(bool _readSensor)
@@ -45,7 +45,7 @@ float AHTSensor::getTemperature(bool _readSensor)
     readSensor();
 
   unsigned long r  = ((values[3] & 0x0F) << 16) | (values[4] << 8) | values[5];
-  return ((200 * r) / 1048576) - 50;
+  return ((200 * r) / 1048576.0) - 50;
 }
 
 float AHTSensor::getDewPoint()
